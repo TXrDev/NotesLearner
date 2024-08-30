@@ -1,0 +1,28 @@
+/* App.css */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.piano-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #eee; /* Optional: Add a background color */
+}
+
+.App h1 {
+  font-size: 2rem;
+}
+
+.App p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

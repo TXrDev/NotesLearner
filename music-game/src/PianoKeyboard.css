@@ -1,0 +1,14 @@
+.piano-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .piano-container .nexus-key {
+    transition: background-color 0.2s ease;
+  }
+  
+  .piano-container .key-clicked {
+    background-color: yellow; /* Change color as needed */
+  }
+  
