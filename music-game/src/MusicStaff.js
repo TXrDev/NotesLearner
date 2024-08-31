@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Vex from 'vexflow';
 
-const { Renderer, Stave, StaveNote, Formatter } = Vex.Flow;
+const { Renderer, Stave, StaveNote, Formatter, Accidental } = Vex.Flow;
 
 function MusicStaff({ note, clefType, keySignature }) {
   const staffRef = useRef(null);
@@ -24,12 +24,23 @@ function MusicStaff({ note, clefType, keySignature }) {
       const stave = new Stave(10, 40, 280);
       stave.addClef(clefType).addKeySignature(keySignature).setContext(context).draw();
 
-      // Create a note
+      // Extract the note letter and accidental
+      const noteParts = note.split('/');
+      const noteLetter = noteParts[0];
+      const octave = noteParts[1];
+      const [baseNote, accidental] = noteLetter.split(/([#b])/); // Split note and accidental
+
+      // Create a stave note with the base note
       const staveNote = new StaveNote({
         clef: clefType,
-        keys: [note],
+        keys: [`${baseNote}/${octave}`], // Base note without accidental
         duration: 'q',
       });
+
+      // Add accidental if it exists
+      if (accidental) {
+        staveNote.addModifier(new Accidental(accidental), 0);
+      }
 
       // Format and draw the note
       Formatter.FormatAndDraw(context, stave, [staveNote]);

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebc8225d.css",
-    "main.js": "/static/js/main.2dfda16d.js",
-    "static/js/453.91fc9e71.chunk.js": "/static/js/453.91fc9e71.chunk.js",
-    "index.html": "/index.html",
-    "main.ebc8225d.css.map": "/static/css/main.ebc8225d.css.map",
-    "main.2dfda16d.js.map": "/static/js/main.2dfda16d.js.map",
-    "453.91fc9e71.chunk.js.map": "/static/js/453.91fc9e71.chunk.js.map"
+    "main.css": "/NotesLearner/static/css/main.ebc8225d.css",
+    "main.js": "/NotesLearner/static/js/main.01096be9.js",
+    "static/js/453.91fc9e71.chunk.js": "/NotesLearner/static/js/453.91fc9e71.chunk.js",
+    "index.html": "/NotesLearner/index.html",
+    "main.ebc8225d.css.map": "/NotesLearner/static/css/main.ebc8225d.css.map",
+    "main.01096be9.js.map": "/NotesLearner/static/js/main.01096be9.js.map",
+    "453.91fc9e71.chunk.js.map": "/NotesLearner/static/js/453.91fc9e71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebc8225d.css",
-    "static/js/main.2dfda16d.js"
+    "static/js/main.01096be9.js"
   ]
 }
